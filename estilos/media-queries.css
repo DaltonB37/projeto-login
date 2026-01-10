@@ -10,6 +10,25 @@ Grandes telas: acima de 1440px
 
 */
 
+@media screen and (max-height: 480px) {
+    section#login {
+        height: 95vh; /* Faz o login ocupar quase a altura toda da tela */
+        width: 450px;  /* Alarga um pouco para caber o conteúdo */
+        display: flex; /* Transforma em flex para colocar imagem ao lado do formulário se quiser */
+    }
+
+    section#login > div#imagem {
+        display: none; /* Esconde a imagem no modo deitado para sobrar espaço para o formulário */
+    }
+    
+    section#login > div#formulario {
+        overflow-y: auto; /* Adiciona scroll interno caso o formulário seja grande */
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
 @media screen and (min-width: 768px) and (max-width:1024px){
     
     body {
